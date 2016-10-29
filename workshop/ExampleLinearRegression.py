@@ -3,10 +3,10 @@ from Regression import LinearRegression
 from numpy import genfromtxt
 import matplotlib.pyplot as plt
 
-dataset = genfromtxt('datasets/dataset01.csv', delimiter=',')
+dataset = genfromtxt('datasets/datasetENEI.csv', delimiter=',')
 
-X = dataset[:, 0].reshape(-1, 1)
-Y = dataset[:, 1].reshape(-1, 1)
+X = dataset[:, 3].reshape(-1, 1)
+Y = dataset[:, 4].reshape(-1, 1)
 
 plt.scatter(X, Y,  color='black')
 plt.xticks(())
